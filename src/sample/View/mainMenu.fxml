@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.MainMenu">
+   <children>
+      <Button layoutX="136.0" layoutY="259.0" mnemonicParsing="false" onAction="#bowlOrder" prefHeight="25.0" prefWidth="67.0" text="Bowl" />
+      <Button layoutX="381.0" layoutY="259.0" mnemonicParsing="false" onAction="#sandwichOrder" text="Sandwich" />
+      <Button layoutX="203.0" layoutY="324.0" mnemonicParsing="false" onAction="#reportsBt" prefHeight="25.0" prefWidth="67.0" text="Reports" />
+      <Button layoutX="326.0" layoutY="324.0" mnemonicParsing="false" onAction="#exitBt" prefHeight="25.0" prefWidth="67.0" text="Exit" />
+      <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/bowl.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/sandwich.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="34.0" prefHeight="25.0" prefWidth="298.0" text="Pick your order:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

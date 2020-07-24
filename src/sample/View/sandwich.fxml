@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.sandwichController">
+    <children>
+        <TextField fx:id="nameFd" layoutX="176.0" layoutY="55.0" />
+        <TextField fx:id="qtyFd" layoutX="176.0" layoutY="91.0" />
+        <Label layoutX="114.0" layoutY="59.0" text="Name:" />
+        <Label layoutX="114.0" layoutY="95.0" text="Quantity:" />
+        <VBox layoutX="132.0" layoutY="150.0" prefHeight="72.0" prefWidth="132.0" spacing="10.0">
+            <children>
+                <RadioButton fx:id="vanilla" mnemonicParsing="false" text="Vanilla ($1.00)">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="flavors" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="chocolate" mnemonicParsing="false" text="Chocolate ($2.00)" toggleGroup="$flavors" />
+                <RadioButton fx:id="strawberry" mnemonicParsing="false" prefHeight="21.0" prefWidth="123.0" text="Strawberry ($2.50)" toggleGroup="$flavors" />
+            </children>
+        </VBox>
+        <VBox layoutX="305.0" layoutY="150.0" prefHeight="80.0" prefWidth="123.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="cookies" mnemonicParsing="false" text="Cookies ($3.00)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="breadType" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="wafers" mnemonicParsing="false" text="Wafers ($1.00)" toggleGroup="$breadType" />
+            <RadioButton fx:id="waffles" mnemonicParsing="false" prefHeight="28.0" prefWidth="107.0" text="Waffles ($2.00)" toggleGroup="$breadType" />
+         </children>
+        </VBox>
+        <ComboBox fx:id="discount" layoutX="355.0" layoutY="79.0" prefWidth="150.0" />
+        <Button layoutX="198.0" layoutY="284.0" mnemonicParsing="false" onAction="#calculateBt" text="Calculate Total" />
+        <Button layoutX="316.0" layoutY="329.0" mnemonicParsing="false" onAction="#exitBt" prefHeight="25.0" prefWidth="74.0" text="Exit" />
+        <Button layoutX="318.0" layoutY="284.0" mnemonicParsing="false" onAction="#newOrderBt" text="New Order" />
+      <Button layoutX="198.0" layoutY="329.0" mnemonicParsing="false" onAction="#clearBt" prefHeight="25.0" prefWidth="74.0" text="Clear" />
+      <Label fx:id="errorMessage" layoutX="62.0" layoutY="246.0" prefHeight="17.0" prefWidth="478.0" textFill="#f70505" />
+      <Label layoutX="353.0" layoutY="51.0" text="Discounts:" />
+    </children>
+</AnchorPane>

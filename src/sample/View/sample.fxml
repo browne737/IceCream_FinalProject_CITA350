@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="383.0" prefWidth="541.0">
+         <children>
+            <VBox layoutX="137.0" layoutY="164.0" prefHeight="52.0" prefWidth="124.0" spacing="35.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="122.0" text="Username:" />
+                  <Label prefHeight="17.0" prefWidth="129.0" text="Password:" />
+               </children>
+            </VBox>
+            <VBox layoutX="208.0" layoutY="164.0" prefHeight="89.0" prefWidth="159.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="usernameTxt" />
+                  <TextField fx:id="passwordTxt" />
+               </children>
+            </VBox>
+            <Button layoutX="174.0" layoutY="272.0" mnemonicParsing="false" onAction="#loginBt" prefHeight="25.0" prefWidth="60.0" text="Log In" />
+            <Button layoutX="288.0" layoutY="272.0" mnemonicParsing="false" onAction="#exitBt" prefHeight="25.0" prefWidth="60.0" text="Exit" />
+            <Label fx:id="errorMessage" layoutX="160.0" layoutY="327.0" prefHeight="25.0" prefWidth="232.0" textFill="#f70101" />
+            <Label layoutX="89.0" layoutY="38.0" text="Morrisville Ice Cream Shop" textAlignment="CENTER" textFill="#328bc2">
+               <font>
+                  <Font name="Curlz MT" size="36.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</GridPane>

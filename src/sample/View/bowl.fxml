@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.bowlController">
+   <children>
+      <TextField fx:id="nameFd" layoutX="176.0" layoutY="55.0" />
+      <TextField fx:id="qtyFd" layoutX="176.0" layoutY="91.0" />
+      <Label layoutX="83.0" layoutY="59.0" text="Name:" />
+      <Label layoutX="83.0" layoutY="95.0" text="Quantity:" />
+      <VBox layoutX="126.0" layoutY="125.0" prefHeight="90.0" prefWidth="136.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="vanilla" mnemonicParsing="false" text="Vanilla ($1.00)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="flavors" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="chocolate" mnemonicParsing="false" text="Chocolate ($2.00)" toggleGroup="$flavors" />
+            <RadioButton fx:id="strawberry" mnemonicParsing="false" text="Strawberry ($2.50)" toggleGroup="$flavors" />
+         </children>
+      </VBox>
+      <VBox layoutX="321.0" layoutY="125.0" prefHeight="82.0" prefWidth="125.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="peanuts" mnemonicParsing="false" text="Peanuts ($0.25)" />
+            <CheckBox fx:id="sprinkles" mnemonicParsing="false" text="Sprinkles ($0.25)" />
+            <CheckBox fx:id="fudge" mnemonicParsing="false" text="Fudge ($0.25)" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="discount" layoutX="355.0" layoutY="79.0" prefWidth="150.0" />
+      <Button layoutX="176.0" layoutY="250.0" mnemonicParsing="false" onAction="#calculateBt" text="Calculate Total" />
+      <Button layoutX="310.0" layoutY="304.0" mnemonicParsing="false" onAction="#exitBt" prefHeight="17.0" prefWidth="75.0" text="Exit" />
+      <Button layoutX="310.0" layoutY="250.0" mnemonicParsing="false" onAction="#newOrderBt" prefHeight="25.0" prefWidth="75.0" text="New Order" />
+      <Label fx:id="errorMessage" layoutX="71.0" layoutY="223.0" prefHeight="17.0" prefWidth="502.0" textFill="#f70404" />
+      <Button layoutX="185.0" layoutY="304.0" mnemonicParsing="false" onAction="#clearBt" prefHeight="17.0" prefWidth="75.0" text="Clear" />
+      <Label layoutX="359.0" layoutY="51.0" text="Discounts:" />
+   </children>
+</AnchorPane>
