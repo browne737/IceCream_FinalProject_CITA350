@@ -12,6 +12,7 @@
       <Button layoutX="203.0" layoutY="324.0" mnemonicParsing="false" onAction="#reportsBt" prefHeight="25.0" prefWidth="67.0" text="Reports" />
       <Button layoutX="326.0" layoutY="324.0" mnemonicParsing="false" onAction="#exitBt" prefHeight="25.0" prefWidth="67.0" text="Exit" />
       <ImageView fx:id="image1" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <!--The image links respectively https://www.123rf.com/clipart-vector/ice_cream_bowl.html?sti=mldzil08yx4k9w67cl| and https://www.cleanpng.com/free/ice-cream-sandwich.html-->
          <image>
             <Image url="@../Images/bowl.PNG" />
          </image>
