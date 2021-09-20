@@ -47,6 +47,10 @@ table you are trying to view. It uses a for loop for accessing the columns and a
 
         ResultSet rs = conn.createStatement().executeQuery(SQL);
 
+        /*For the TableView I found out how to fill the table by using code from:
+        https://stackoverflow.com/questions/18941093/how-to-fill-up-a-tableview-with-database-data.
+        I modified the code slightly to fit my use */
+        
         for(int i=0 ; i<rs.getMetaData().getColumnCount(); i++){
             //We are using non property style for making dynamic table
             final int j = i;
